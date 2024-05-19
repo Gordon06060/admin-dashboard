@@ -1,0 +1,117 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar{
+    background-color: #2fb8ee;
+    display:grid;
+    grid-template-rows: 400px repeat(6, 200px);
+    align-items: end;
+    padding-left: 50px;
+}
+
+.sidebar .dashboard{
+    display: grid;
+    font-size: 100px;
+    align-self: start;
+    padding-top: 50px;
+}
+
+.sidebar .sidebar-option{
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+    align-self: start;
+}
+
+.right-side{
+    display: grid;
+    grid-template-rows: 350px auto;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+
+.header .buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+    font-size: 50px;
+}
+
+.header .greeting{
+    font-weight: bold;
+    font-size: 70px;
+    padding-left: 50px;
+}
+
+.maincontent{
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+    background-color: #DCDCDC;
+}
+
+.maincontent .maincontent-header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 50px;
+
+}
+
+.maincontent .maincontent-header .accouncements{
+    padding-left: 30px;
+}
+
+.maincontent .maincontent-header .projects, 
+.maincontent .maincontent-header .accouncements,
+.accouncements-card,
+.trending,
+.card{
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.cards-container .mainleft{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding-left: 50px;
+}
+
+.cards-container .mainright{
+    display: grid;
+    grid-template-rows: 6fr 1fr 6fr;
+    padding-left: 50px;
+}
+
+.cards-container .mainright .trending{
+    grid-row: 2;
+    display: grid;
+    align-items: center;
+}
+
+.cards-container .mainright .accouncements-card{
+    background-color: white;
+    padding: 20px;
+}
+
+.cards-container .mainright .trending-cards{
+    background-color: white;
+    font-size: 50px;
+}
+.cards-container .mainleft .card{
+    background-color: white;
+    padding: 50px;
+}
